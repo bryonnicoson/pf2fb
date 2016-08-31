@@ -20,6 +20,7 @@ Bundler.require()
 	end
 end
 
-firebase = Firebase::Client.new(ENV['FIREBASE_URI'], ENV['FIREBASE_KEY'])
+#firebase = Firebase::Client.new(ENV['FIREBASE_URI'], ENV['FIREBASE_KEY'])
+firebase = Firebase::Client.new(ENV['FIREBASE_URI'])
 response = firebase.push('', @xml.to_json)
 
