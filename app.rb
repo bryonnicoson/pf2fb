@@ -40,6 +40,6 @@ def petfinder_to_firebase()
 	end
 
 	# something to send to the screen to make the web server happy
-	@xml.to_json
-
+	# @xml.to_json
+	response
 end
