@@ -33,6 +33,7 @@ def petfinder_to_firebase()
 					:age => pet[1][i]["age"],
 					:sex => pet[1][i]["sex"],	
 					:description => pet[1][i]["description"]
+					:petfinder_id => pet[1][i]["id"]
 					})
 			i += 1
 		end
