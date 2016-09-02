@@ -9,7 +9,7 @@ end
 def petfinder_to_firebase()
 	# get petfinder xml
 	@xml = HTTParty.get(ENV['PETFINDER_URI'])	
-	firebase = Firebase::Client.new(ENV['FIREBASE_URI'])
+	firebase = Firebase::Client.new(ENV['FIREBASE_URI'], ENV['FIREBASE_KEY'])
 
 	# for now, just wiping and refilling with all data
 	response = firebase.delete("pets")
